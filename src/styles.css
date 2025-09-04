@@ -14,29 +14,7 @@ html, body {
   padding: 0;
   overflow-y: auto; /* ✅ scroll works */
   font-family: "Montserrat", sans-serif;
-  background: #13182600; /* base dark color */
+  background: #0F0F0F; /* base dark color */
   position: relative;
-}
-
-/* Dark animated gradient overlay */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1; /* behind content */
-  background: linear-gradient(45deg,
-    #1b1f3a,
-    #2a2e4a,
-    #1c1f33,
-    #2d2b44,
-    #1b1f3a
-  );
-  background-size: 400% 400%;
-  animation: darkGradient 25s ease infinite;
-}
-
-@keyframes darkGradient {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  padding-top: 4rem;
 }
