@@ -1,12 +1,4 @@
-@if (content) {
-  <div class="content-with-image">
-    <div class="content-with-image-left">
-      <h2> {{ content.title }}</h2>
-      <p> {{ content.description }} </p>
-    </div>
-
-    <div class="content-with-image-right">
-      <img [src]="content.imageUrl" >
-    </div>
-  </div>
+@for (content of contentList; track $index) {
+  <app-content-image-component [content]="content"></app-content-image-component>
 }
+

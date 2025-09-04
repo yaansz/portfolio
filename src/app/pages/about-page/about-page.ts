@@ -1,23 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { AboutService } from '../../services/about-service';
-import { AboutContent } from '../../models/about-models';
+import { ContentWithImage } from '../../models/content-image-models';
+import { ContentImageComponent } from "../../components/content-image-component/content-image-component";
 
 @Component({
   selector: 'app-about-page',
-  imports: [],
+  imports: [ContentImageComponent],
   templateUrl: './about-page.html',
   styleUrl: './about-page.css'
 })
 export class AboutPage implements OnInit {
 
-  content : AboutContent | null;
+  contentList : ContentWithImage[] = [];
 
   constructor(private service : AboutService) {
-    this.content = null;
+    this.contentList = [];
   }
 
   ngOnInit(): void {
-    this.content = this.service.getContent();
-    console.log("Starting AboutPage", this.content);
+    this.contentList = this.service.getContent();
+    console.log("Starting AboutPage", this.contentList);
   }
 }

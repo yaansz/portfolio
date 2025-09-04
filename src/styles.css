@@ -8,44 +8,35 @@
 	box-sizing: border-box;
 }
 
-body {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* ✅ scroll works */
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  background: #131826;
-  overflow: hidden;
+  background: #13182600; /* base dark color */
   position: relative;
 }
 
-body::before,
-body::after {
-  content: "";
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  filter: blur(150px);
-  opacity: 0.4;
-  z-index: -1;
-  animation: float 15s infinite alternate ease-in-out;
-}
-
+/* Dark animated gradient overlay */
 body::before {
-  background: radial-gradient(circle at center, #ff6ec7, transparent 70%);
-  top: -200px;
-  left: -200px;
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1; /* behind content */
+  background: linear-gradient(45deg,
+    #1b1f3a,
+    #2a2e4a,
+    #1c1f33,
+    #2d2b44,
+    #1b1f3a
+  );
+  background-size: 400% 400%;
+  animation: darkGradient 25s ease infinite;
 }
 
-body::after {
-  background: radial-gradient(circle at center, #5ef9d7, transparent 70%);
-  bottom: -200px;
-  right: -200px;
-  animation-delay: 7s;
-}
-
-@keyframes float {
-  0%   { transform: translate(0, 0) scale(1); }
-  50%  { transform: translate(-10rem, -10rem) scale(1.1); }
-  100% { transform: translate(-20rem, 50rem) scale(0.9); }
+@keyframes darkGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
