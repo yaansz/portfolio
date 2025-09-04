@@ -1,0 +1,27 @@
+<div class="container__menu-top">
+  <div class="menu-top-left">
+    <img src="images/yan-logo.png" />
+    <h1>Yan Figueiredo</h1>
+  </div>
+
+  <div class="menu-top-center">
+    <p-toolbar class="menu-top-center-tool-bar">
+      <p-button icon="pi pi-user" label="About" text plain />
+      <p-button icon="pi pi-briefcase" label="Experience" text plain />
+      <p-button icon="pi pi-building-columns" label="Projects" text plain />
+      <p-button icon="pi pi-address-book" label="Contact" text plain />
+    </p-toolbar>
+  </div>
+
+  <div class="menu-top-right">
+    <p-icon-field class="pi pi-language"></p-icon-field>
+    <p-selectbutton
+      [options]="langOptions"
+      [(ngModel)]="selectedLang"
+      optionLabel="label"
+      optionValue="value"
+      (onChange)="onChange($event.value)"
+      ariaLabel="Language switch"
+    ></p-selectbutton>
+  </div>
+</div>
