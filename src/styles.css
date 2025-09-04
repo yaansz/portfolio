@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body {
+  background-color: #fae5c4;
+  color: #cd7f41;
+  font-family: 'Story Script', sans-serif;
+}
