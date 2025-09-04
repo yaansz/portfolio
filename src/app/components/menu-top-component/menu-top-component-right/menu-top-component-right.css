@@ -24,3 +24,12 @@
   background-color: gray;    /* visible line color */
   margin: 0.5rem 0;          /* spacing above and below */
 }
+
+.menu-top-right-button {
+  --p-button-background: #404040;
+}
+
+.p-button {
+  background: red !important;
+}
+

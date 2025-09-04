@@ -1,11 +1,8 @@
-/* =========================
-   Container / Top Menu
-   ========================= */
 .container__menu-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; /* vertical alignment */
   padding: 1rem;
-  background: #0D0D0D;
+  background: none;
 }
