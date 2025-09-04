@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center; /* vertical alignment */
   padding: 1rem;
+  background: #0D0D0D;
 }
 
 /* -------------------------
@@ -110,4 +111,11 @@
   .menu-top-right .p-button .label {
     display: none; /* show emoji only */
   }
+}
+
+.menu-top-right-divider {
+  border: none;              /* remove default border */
+  height: 0.01rem;               /* thickness of the line */
+  background-color: gray;    /* visible line color */
+  margin: 0.5rem 0;          /* spacing above and below */
 }
