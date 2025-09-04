@@ -7,13 +7,22 @@ import { FormsModule } from '@angular/forms';
 import { IconFieldModule } from 'primeng/iconfield';
 import { MenuModule } from 'primeng/menu';
 import { PopoverModule } from 'primeng/popover';
+import { MenuTopComponentLeft } from './menu-top-component-left/menu-top-component-left';
 
 type LangOption = { label: string; value: string; emoji?: string; title?: string };
 
 
 @Component({
   selector: 'app-menu-top-component',
-  imports: [ToolbarModule, ButtonModule, SelectButtonModule, FormsModule, IconFieldModule, ButtonModule, PopoverModule],
+  imports: [
+    ToolbarModule,
+    ButtonModule,
+    SelectButtonModule,
+    FormsModule,
+    IconFieldModule,
+    ButtonModule,
+    PopoverModule,
+    MenuTopComponentLeft],
   templateUrl: './menu-top-component.html',
   styleUrl: './menu-top-component.css',
 })

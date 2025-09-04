@@ -11,25 +11,6 @@
 }
 
 /* -------------------------
-   Left section
-   ------------------------- */
-.menu-top-left {
-  display: flex;
-  align-items: center;
-  flex: 0 0 auto; /* don't grow */
-}
-
-.menu-top-left > h1 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-.menu-top-left > img {
-  width: 2.5rem;
-  margin-left: 1rem;
-}
-
-/* -------------------------
    Center section
    ------------------------- */
 .menu-top-center {
