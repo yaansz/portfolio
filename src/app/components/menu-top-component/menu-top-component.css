@@ -11,25 +11,6 @@
 }
 
 /* -------------------------
-   Center section
-   ------------------------- */
-.menu-top-center {
-  flex: 1; /* take remaining space */
-  display: flex;
-  justify-content: center; /* center content */
-}
-
-.menu-top-center-tool-bar {
-  --p-toolbar-background: #00000000;
-  --p-toolbar-border-color: #00000000;
-}
-
-.p-toolbar {
-  border: none !important;
-  box-shadow: none !important;
-}
-
-/* -------------------------
    Right section
    ------------------------- */
 .menu-top-right {

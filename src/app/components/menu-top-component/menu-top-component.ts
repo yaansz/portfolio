@@ -8,6 +8,7 @@ import { IconFieldModule } from 'primeng/iconfield';
 import { MenuModule } from 'primeng/menu';
 import { PopoverModule } from 'primeng/popover';
 import { MenuTopComponentLeft } from './menu-top-component-left/menu-top-component-left';
+import { MenuTopComponentCenter } from './menu-top-component-center/menu-top-component-center';
 
 type LangOption = { label: string; value: string; emoji?: string; title?: string };
 
@@ -22,7 +23,8 @@ type LangOption = { label: string; value: string; emoji?: string; title?: string
     IconFieldModule,
     ButtonModule,
     PopoverModule,
-    MenuTopComponentLeft],
+    MenuTopComponentLeft,
+    MenuTopComponentCenter],
   templateUrl: './menu-top-component.html',
   styleUrl: './menu-top-component.css',
 })

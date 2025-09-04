@@ -1,0 +1,15 @@
+.menu-top-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-top-center-tool-bar {
+  --p-toolbar-background: #00000000;
+  --p-toolbar-border-color: #00000000;
+}
+
+.p-toolbar {
+  border: none !important;
+  box-shadow: none !important;
+}
