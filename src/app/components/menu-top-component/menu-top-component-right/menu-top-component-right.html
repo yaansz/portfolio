@@ -1,0 +1,25 @@
+<div class="menu-top-right">
+  <p-button icon="pi pi-ellipsis-v" (click)="op.toggle($event)"></p-button>
+  <p-popover #op>
+    <div class="menu-top-right-popover">
+      <!-- Language Switch -->
+      <div class="menu-top-right-popover-language">
+        <h4>Select your Language</h4>
+        <p-selectbutton
+          [options]="langOptions"
+          [(ngModel)]="selectedLang"
+          optionLabel="label"
+          optionValue="value"
+        ></p-selectbutton>
+      </div>
+
+      <hr class="menu-top-right-divider" />
+
+      <!-- Login as Admin Button -->
+      <div class="menu-top-right-popover-settings">
+        <h4>Settings</h4>
+        <p-button icon="pi pi-cog" label="Admin"></p-button>
+      </div>
+    </div>
+  </p-popover>
+</div>
