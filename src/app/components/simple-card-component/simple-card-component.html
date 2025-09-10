@@ -1,0 +1,8 @@
+@if (content) {
+<p-card [style]="{ width: '25rem', overflow: 'hidden', height: '10rem' }">
+
+  <ng-template #title> {{ content.title }} </ng-template>
+
+  <ng-template #subtitle> {{ content.description }} </ng-template>
+</p-card>
+}

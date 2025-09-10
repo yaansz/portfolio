@@ -1,7 +1,13 @@
-
 <div class="container__about-page-content">
-@for (content of contentList; track $index) {
+  @for (content of contentList; track $index) {
   <app-content-image-component [content]="content"></app-content-image-component>
-}
-</div>
+  }
 
+  <p-divider></p-divider>
+
+  <div class="about-page-intro">
+    @for (content of stackContent; track $index) {
+    <app-simple-card-component [content]="content"></app-simple-card-component>
+    }
+  </div>
+</div>

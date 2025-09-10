@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ContentWithImage } from '../../models/content-image-models';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-content-image-component',

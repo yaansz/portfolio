@@ -6,3 +6,17 @@
   margin: 0 auto;       /* centers horizontally */
   align-items: center;  /* centers children inside */
 }
+
+.about-page-intro {
+  padding: 2rem;
+  /* background-color: #f4f4f4; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* cleaner spacing than margin */
+}
+
+.about-page-intro > app-simple-card-component {
+  margin: 0rem;
+}
