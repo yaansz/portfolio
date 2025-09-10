@@ -7,16 +7,12 @@
 }
 
 .content-with-image-right img {
-  width: 20rem;
-  height: 20rem;
-  object-fit: cover;
-  border-radius: 50%; /* circle mask */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.content-with-image-left {
+  width: 100%;
   max-width: 30vw;
-  margin-right: 5vw;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
 }
 
 .content-with-image-left h2 {

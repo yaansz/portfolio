@@ -1,0 +1,8 @@
+.container__about-page-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;          /* ensures it shrinks with max-width */
+  max-width: 70%;       /* keeps it from being too wide */
+  margin: 0 auto;       /* centers horizontally */
+  align-items: center;  /* centers children inside */
+}
