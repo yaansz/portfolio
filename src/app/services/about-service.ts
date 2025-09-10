@@ -34,8 +34,8 @@ export class AboutService {
         icon: 'pi pi-graduation-cap',
       },
       {
-        title: 'Software Developer',
-        subtitle: 'Professional Experience since 2021',
+        title: 'Experience',
+        subtitle: 'Professional Software Developer Experience since 2021',
         description: `
 Build and maintain high-performance systems, with experience in TCP, WebSockets, REST, threading, and software metrics.
 Contributed to teaching and research in data structures and data analysis/generation packages.
