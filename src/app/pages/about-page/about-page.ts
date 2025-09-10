@@ -7,7 +7,6 @@ import { SimpleCardContent } from '../../models/simple-card-models';
 import { DividerModule } from 'primeng/divider';
 import { AdvancedCardComponent } from "../../components/advanced-card-component/advanced-card-component";
 import { AdvancedCardContent } from '../../models/advanced-card-content';
-import { TimelineModule } from 'primeng/timeline';
 
 @Component({
   selector: 'app-about-page',
