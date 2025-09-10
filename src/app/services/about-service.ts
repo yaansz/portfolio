@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ContentWithImage } from '../models/content-image-models';
 import { SimpleCardContent } from '../models/simple-card-models';
+import { AdvancedCardContent } from '../models/advanced-card-content';
 
 @Injectable({
   providedIn: 'root',
@@ -19,6 +20,27 @@ export class AboutService {
         description:
           'I enjoy building robust software using Go and Java. I focus on writing clean, maintainable code and creating efficient architectures for high-availability systems. I also love exploring async programming and scalable back-end solutions.',
         imageUrl: '',
+      },
+    ];
+  }
+
+  getAboutMe(): AdvancedCardContent[] {
+    return [
+      {
+        title: 'Education',
+        subtitle: 'Graduate of the Federal Rural University of Rio de Janeiro in 2023',
+        description:
+          'Bachelor of Computer Science (B.Sc.) from UFRRJ, with specializations in Systems and Information Engineering and Intelligent Systems, graduated cum laude.',
+        icon: 'pi pi-graduation-cap',
+      },
+      {
+        title: 'Software Developer',
+        subtitle: 'Professional Experience since 2021',
+        description: `
+Build and maintain high-performance systems, with experience in TCP, WebSockets, REST, threading, and software metrics.
+Contributed to teaching and research in data structures and data analysis/generation packages.
+  `,
+        icon: 'pi pi-star-fill',
       },
     ];
   }
@@ -46,8 +68,10 @@ export class AboutService {
       },
       {
         title: 'Git / GitHub / GitLab',
-        description:
-          'Daily use of version control, managing codebases and collaborating on projects.',
+        description: `
+Daily use of version control, managing codebases, collaborating on projects,
+and implementing CI/CD pipelines for automated testing and deployment.
+  `,
       },
       {
         title: 'Docker',

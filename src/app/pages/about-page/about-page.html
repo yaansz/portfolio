@@ -5,9 +5,25 @@
 
   <p-divider></p-divider>
 
-  <div class="about-page-intro">
-    @for (content of stackContent; track $index) {
-    <app-simple-card-component [content]="content"></app-simple-card-component>
-    }
+  <div class="about-page-about">
+    <h1>About Me</h1>
+
+    <div class="about-page-about-list">
+      @for (content of aboutMeContent; track $index) {
+      <app-advanced-card-component [content]="content" ></app-advanced-card-component>
+      }
+    </div>
+  </div>
+
+  <p-divider></p-divider>
+
+  <div class="about-page-skills">
+    <h1>Skills</h1>
+
+    <div class="about-page-skills-list">
+      @for (content of stackContent; track $index) {
+      <app-simple-card-component [content]="content"></app-simple-card-component>
+      }
+    </div>
   </div>
 </div>

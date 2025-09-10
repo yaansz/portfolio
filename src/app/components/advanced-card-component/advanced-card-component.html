@@ -1,0 +1,14 @@
+@if (content) {
+<p-card [style]="{ width: '25rem', overflow: 'hidden', height: '23rem' }">
+    <ng-template #header>
+        <div class="avatar-container">
+          <p-avatar [icon]="content.icon" class="mr-2" size="xlarge" style="background-color: #00000000;" />
+        </div>
+    </ng-template>
+    <ng-template #title> {{ content.title }} </ng-template>
+    <ng-template #subtitle> {{ content.subtitle }} </ng-template>
+    <p>
+        {{ content.description }}
+    </p>
+</p-card>
+}

@@ -7,7 +7,7 @@
   align-items: center;  /* centers children inside */
 }
 
-.about-page-intro {
+.about-page-skills-list, .about-page-about-list {
   padding: 2rem;
   /* background-color: #f4f4f4; */
   display: flex;
@@ -17,6 +17,14 @@
   gap: 1rem; /* cleaner spacing than margin */
 }
 
-.about-page-intro > app-simple-card-component {
+.about-page-skills-list, .about-page-about-list > app-simple-card-component {
   margin: 0rem;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
 }
