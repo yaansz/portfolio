@@ -12,9 +12,12 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-y: auto; /* ✅ scroll works */
   font-family: "Montserrat", sans-serif;
-  background: #0F0F0F; /* base dark color */
+  color: #064232;
+  background: #FFF5F2; /* base dark color */
   position: relative;
-  padding-top: 4rem;
+}
+
+.content-width {
+  width: 75%;
 }

@@ -4,3 +4,13 @@
   align-items: center;
   margin: 1rem;
 }
+
+.card-colors {
+  background-color: #FFF5F2;
+  color: #064232;
+  --p-card-subtitle-color: #568F87;
+}
+
+.avatar-colors {
+  --p-avatar-color: #064232;
+}

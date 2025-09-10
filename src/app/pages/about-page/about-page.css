@@ -1,8 +1,6 @@
 .container__about-page-content {
   display: flex;
   flex-direction: column;
-  width: 100%;          /* ensures it shrinks with max-width */
-  max-width: 70%;       /* keeps it from being too wide */
   margin: 0 auto;       /* centers horizontally */
   align-items: center;  /* centers children inside */
 }
@@ -19,6 +17,18 @@
 
 .about-page-skills-list, .about-page-about-list > app-simple-card-component {
   margin: 0rem;
+}
+
+.container__about-page-about-me-section {
+  background-color: #F5BABB;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.container_about-page-skills-section {
+  background-color: #568F87;
+  width: 100%;
+  padding-top: 1rem;
 }
 
 h1 {

@@ -3,21 +3,26 @@
   <app-content-image-component [content]="content"></app-content-image-component>
   }
 
-  <p-divider></p-divider>
+  <div class="container__about-page-about-me-section">
 
-  <div class="about-page-about">
-    <h1>About Me</h1>
+    <!-- <p-divider></p-divider> -->
 
-    <div class="about-page-about-list">
-      @for (content of aboutMeContent; track $index) {
-      <app-advanced-card-component [content]="content" ></app-advanced-card-component>
-      }
+    <div class="about-page-about container__about-page-content content-width">
+      <h1>About Me</h1>
+
+      <div class="about-page-about-list">
+        @for (content of aboutMeContent; track $index) {
+        <app-advanced-card-component [content]="content" ></app-advanced-card-component>
+        }
+      </div>
     </div>
   </div>
 
-  <p-divider></p-divider>
+  <div class="container_about-page-skills-section">
 
-  <div class="about-page-skills">
+  <!-- <p-divider></p-divider> -->
+
+  <div class="about-page-skills container__about-page-content content-width">
     <h1>Skills</h1>
 
     <div class="about-page-skills-list">
@@ -25,5 +30,7 @@
       <app-simple-card-component [content]="content"></app-simple-card-component>
       }
     </div>
+  </div>
+
   </div>
 </div>

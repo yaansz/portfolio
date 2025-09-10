@@ -67,6 +67,11 @@ Contributed to teaching and research in data structures and data analysis/genera
         description: 'Created high-performance APIs and personal projects with Fiber.',
       },
       {
+        title: 'SQL / PostgreSQL',
+        description:
+          'Designed relational schemas, optimized queries, and managed databases for reliable data persistence.',
+      },
+      {
         title: 'Git / GitHub / GitLab',
         description: `
 Daily use of version control, managing codebases, collaborating on projects,
