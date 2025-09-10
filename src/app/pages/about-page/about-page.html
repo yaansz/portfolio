@@ -18,7 +18,7 @@
     </div>
   </div>
 
-  <div class="container_about-page-skills-section">
+  <div class="container__about-page-skills-section">
 
   <!-- <p-divider></p-divider> -->
 
@@ -31,6 +31,17 @@
       }
     </div>
   </div>
+
+  </div>
+
+  <div class="container__about-page-projects-section">
+    <h1>Projects</h1>
+
+    <div class="about-page-projects-list">
+    @for (project of personalProjects; track $index) {
+    <app-project-info-component [project]="project"></app-project-info-component>
+    }
+    </div>
 
   </div>
 </div>

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { ContentWithImage } from '../models/content-image-models';
 import { SimpleCardContent } from '../models/simple-card-models';
 import { AdvancedCardContent } from '../models/advanced-card-content';
+import { ProjectsContent } from '../models/projects-models';
 
 @Injectable({
   providedIn: 'root',
@@ -81,6 +82,71 @@ and implementing CI/CD pipelines for automated testing and deployment.
       {
         title: 'Docker',
         description: 'Containerized applications for consistent environments and deployment.',
+      },
+    ];
+  }
+
+  getProjects(): ProjectsContent[] {
+    return [
+      {
+        title: 'Curupira',
+        description:
+          'Java framework for Discord. Developed a declarative library to facilitate Discord integrations, using a format inspired by Spring Boot. Used JitPack for release distribution.',
+        stack: ['Java', 'JDA', 'Reflections', 'JitPack'],
+        github: 'https://github.com/Softawii/curupira',
+        youtube: '',
+      },
+      {
+        title: 'Capivara',
+        description:
+          'Discord Bot. Implemented features for creating, controlling, and configuring on-demand voice channels, automated role management, automatic correction of message embeds, generation and monitoring of metrics, CI/CD pipelines, and weekly database backups.',
+        stack: [
+          'Java',
+          'JDA',
+          'Curupira',
+          'Spring Boot',
+          'Docker',
+          'GitHub Actions',
+          'Micrometer',
+          'Prometheus',
+          'Grafana',
+          'PostgreSQL',
+        ],
+        github: 'https://github.com/softawii/capivara',
+        youtube: '',
+      },
+      {
+        title: 'Caramelo',
+        description:
+          'Payment integration and ticketing system for events and services in a controlled environment.',
+        stack: ['Java', 'Spring', 'PostgreSQL', 'Supabase', 'Prometheus', 'Grafana', 'Angular'],
+        github: '',
+        youtube: '',
+      },
+      {
+        title: 'Cuca',
+        description:
+          'Email domain-based authentication bot. Authenticates users based on a configured email domain (e.g., @ufrrj.br), generates tokens, and integrates with SMTP.',
+        stack: ['Java', 'Micronaut', 'JDA', 'PostgreSQL'],
+        github: 'https://github.com/softawii/cuca',
+        youtube: '',
+      },
+      {
+        title: 'ADDAOU-PAPI',
+        description:
+          'Performance analysis of sorting algorithms using PAPI. Utilized the PAPI profiler to measure the performance of MergeSort and QuickSort.',
+        stack: ['C', 'C++', 'Python', 'PAPI'],
+        github: 'https://github.com/Softawii/ADDAOU-PAPI',
+        youtube: '',
+      },
+      {
+        title: 'Dave, The Explorer',
+        description:
+          'Game developed for a university project. Implemented mechanics such as puzzles, drones, pressure plates, and movable objects.',
+        stack: ['C#', 'Unity'],
+        github: 'https://github.com/Softawii/Project-DDC',
+        youtube:
+          'https://www.youtube.com/watch?v=fpAx1ffZ3AA&t=308s&ab_channel=SergioFelipeRezende',
       },
     ];
   }

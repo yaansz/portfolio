@@ -1,0 +1,20 @@
+.card-colors {
+  background-color: #FFF5F2;
+  color: #064232;
+  --p-card-subtitle-color: #568F87;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer-view > a {
+  margin: 0.2rem;
+}
+
+.footer-view {
+  margin-top: auto;
+}
+

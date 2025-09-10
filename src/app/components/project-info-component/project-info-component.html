@@ -1,0 +1,35 @@
+@if (project) {
+<div class="project-card">
+  <p-card [style]="{ width: '25rem', minHeight: '34vh' }" class="card-colors card-flex">
+    <ng-template #title>{{ project?.title }}</ng-template>
+
+    <div class="card-content">
+      <p>{{ project?.description }}</p>
+    </div>
+
+    <ng-template #footer>
+      <div class="footer-view">
+        @if (project.github != "") {
+        <a [href]="project.github">
+          <p-button
+            label="GitHub"
+            icon="pi pi-github"
+            class="w-full"
+            styleClass="w-full"
+          ></p-button>
+        </a>
+        } @if (project.youtube) {
+        <a [href]="project.youtube">
+          <p-button
+            label="YouTube"
+            icon="pi pi-youtube"
+            class="w-full"
+            styleClass="w-full"
+          ></p-button>
+        </a>
+        }
+      </div>
+    </ng-template>
+  </p-card>
+</div>
+}

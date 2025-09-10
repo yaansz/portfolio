@@ -5,7 +5,7 @@
   align-items: center;  /* centers children inside */
 }
 
-.about-page-skills-list, .about-page-about-list {
+.about-page-skills-list, .about-page-about-list, .about-page-projects-list {
   padding: 2rem;
   /* background-color: #f4f4f4; */
   display: flex;
@@ -26,7 +26,14 @@
   padding-bottom: 2rem;
 }
 
-.container_about-page-skills-section {
+.container__about-page-skills-section {
+  background-color: #F5BABB;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.container__about-page-projects-section {
   background-color: #568F87;
   width: 100%;
   padding-top: 1rem;
