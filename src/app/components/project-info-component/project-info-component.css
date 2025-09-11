@@ -1,17 +1,42 @@
-.card-colors {
+.project-card {
   background-color: #FFF5F2;
   color: #064232;
-  --p-card-subtitle-color: #568F87;
-}
-
-.project-card {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  padding: 2rem;
+  border-radius: 0.2rem;
+  width: 25rem;
+  min-height: 28rem;
+  box-shadow: 1px 8px 15px -6px rgba(0,0,0,0.31);
+  -webkit-box-shadow: 1px 8px 15px -6px rgba(0,0,0,0.31);
+  -moz-box-shadow: 1px 8px 15px -6px rgba(0,0,0,0.31);
+}
+
+.project-card-header > h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #064232;
+  margin-bottom: 0.2rem;
+}
+
+.project-card-body > p {
+  color: #568F87;
 }
 
 .footer-view > a {
   margin: 0.2rem;
+}
+
+.footer-view {
+  margin-top: 1rem;
+}
+
+.card-stack > p-tag {
+  margin: 0.2rem;
+}
+
+.card-stack {
+  margin-top: 0.5rem;
 }
 
 .footer-view {
