@@ -16,6 +16,9 @@
   --p-button-primary-hover-background: #00000000;
   --p-button-primary-hover-border-color: #00000000;
   --p-button-primary-hover-color: #F5BABB;
+  --p-button-primary-active-background: #568F87;
+  --p-button-primary-active-border-color: #568F87;
+  --p-button-primary-active-color: #F5BABB;
 }
 
 .p-toolbar {

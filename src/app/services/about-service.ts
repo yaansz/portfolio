@@ -147,7 +147,7 @@ and implementing CI/CD pipelines for automated testing and deployment.
         stack: ['C#', 'Unity'],
         github: 'https://github.com/Softawii/Project-DDC',
         youtube:
-          'https://www.youtube.com/watch?v=fpAx1ffZ3AA&t=308s&ab_channel=SergioFelipeRezende',
+          'fpAx1ffZ3AA',
       },
     ];
   }

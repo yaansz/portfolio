@@ -23,9 +23,12 @@
     }
 
     @if (project.youtube) {
-    <a [href]="project.youtube" target="_blank">
-      <p-button label="YouTube" icon="pi pi-youtube" class="project-link-button"></p-button>
-    </a>
+    <p-button label="YouTube" icon="pi pi-youtube" class="project-link-button" (onClick)="openDialog()"></p-button>
+    <p-dialog header="Check the Video!" [(visible)]="youtubeDialog" class="youtube-dialog-view">
+      <div class="youtube-dialog-content">
+        <app-youtube-player-component [videoId]="project.youtube"></app-youtube-player-component>
+      </div>
+    </p-dialog>
     }
   </div>
 </div>
