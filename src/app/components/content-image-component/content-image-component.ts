@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { ContentWithImage } from '../../models/content-image-models';
-import { CardModule } from 'primeng/card';
+import { PanelModule } from 'primeng/panel';
 
 @Component({
   selector: 'app-content-image-component',
-  imports: [],
+  imports: [PanelModule],
   templateUrl: './content-image-component.html',
   styleUrl: './content-image-component.css'
 })

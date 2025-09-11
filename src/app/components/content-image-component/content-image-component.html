@@ -1,14 +1,12 @@
 @if (content) {
-<div class="content-with-image">
-  <div class="content-with-image-left">
-    <h2>{{ content.title }}</h2>
+<section class="hero-container">
+  <div class="hero-content">
+    <h1>{{ content.title }}</h1>
+
     <p>{{ content.description }}</p>
   </div>
-
-  @if (content.imageUrl) {
-  <div class="content-with-image-right">
-    <img [src]="content.imageUrl" />
+  <div class="hero-image">
+    <img [src]="content.imageUrl" [alt]="content.title">
   </div>
-  }
-</div>
+</section>
 }

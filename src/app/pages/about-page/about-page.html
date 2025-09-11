@@ -1,9 +1,12 @@
 <div class="container__about-page-content">
-  @for (content of contentList; track $index) {
-  <app-content-image-component [content]="content"></app-content-image-component>
-  }
 
-  <div class="container__about-page-about-me-section">
+  <div id="about" class="container__about-page-header content-width">
+    @for (content of contentList; track $index) {
+    <app-content-image-component [content]="content"></app-content-image-component>
+    }
+  </div>
+
+  <div id="experience" class="container__about-page-about-me-section">
 
     <!-- <p-divider></p-divider> -->
 
@@ -34,7 +37,7 @@
 
   </div>
 
-  <div class="container__about-page-projects-section">
+  <div id="projects" class="container__about-page-projects-section">
     <h1>Projects</h1>
 
     <div class="about-page-projects-list">

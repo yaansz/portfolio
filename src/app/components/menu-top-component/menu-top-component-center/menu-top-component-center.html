@@ -1,8 +1,8 @@
 <div class="menu-top-center">
   <p-toolbar class="menu-top-center-tool-bar">
-    <p-button icon="pi pi-user" label="About" routerLink="/about" text plain />
-    <p-button icon="pi pi-briefcase" label="Experience" routerLink="/experience" text plain />
-    <p-button icon="pi pi-building-columns" label="Projects" routerLink="/projects" text plain />
-    <p-button icon="pi pi-address-book" label="Contact" routerLink="/contact" text plain />
+    <p-button icon="pi pi-user" label="About" (onClick)="scrollTo('about')" text plain />
+    <p-button icon="pi pi-briefcase" label="Experience" (onClick)="scrollTo('experience')" text plain />
+    <p-button icon="pi pi-building-columns" label="Projects" (onClick)="scrollTo('projects')" text plain />
+    <p-button icon="pi pi-address-book" label="Contact" (onClick)="scrollTo('contact')" text plain />
   </p-toolbar>
 </div>

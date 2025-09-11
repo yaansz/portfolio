@@ -1,3 +1,4 @@
+
 .container__about-page-content {
   display: flex;
   flex-direction: column;
@@ -24,6 +25,17 @@
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 2rem;
+}
+
+.container__about-page-header {
+  /* background-color: #568F87; */
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  margin: 5rem;
+  --p-fieldset-background: #568F87;
+  --p-fieldset-legend-background: #568F87;
 }
 
 .container__about-page-skills-section {

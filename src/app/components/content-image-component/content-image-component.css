@@ -1,28 +1,37 @@
-.content-with-image {
+/* hero.component.css */
+.hero-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  min-height: 80vh;
   padding: 2rem;
+  gap: 3rem;
 }
 
-.content-with-image-right img {
-  width: 100%;
-  max-width: 30vw;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
+.hero-content {
+  flex: 1;
 }
 
-.content-with-image-left h2 {
-  margin: 0 0 1rem;
-  font-size: 2.5rem;
-  font-weight: 400;
+.hero-content > h1 {
+  font-size: 5rem;
+  font-weight: bold;
 }
 
-.content-with-image-left p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #064232;
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 30rem;
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }

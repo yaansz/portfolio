@@ -8,6 +8,7 @@ export class FooterService {
 
   getFooterContent() : FooterContent {
     return {
+      name: "Yan Figueiredo",
       twitter: "https://x.com/yaaaansz",
       github: "https://github.com/yaansz",
       linkedin: "https://www.linkedin.com/in/yansz/",

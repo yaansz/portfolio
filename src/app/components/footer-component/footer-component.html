@@ -1,11 +1,10 @@
 @if (footerContent) {
 <footer>
-  <div class="container__footer">
+  <div id="contact" class="container__footer">
 
       <div class="footer-credits">
-      <p class="text-sm">© {{ getCurrentYear() }} Yan Figueiredo.</p>
+        <p class="text-sm">© {{ getCurrentYear() }} {{ footerContent.name }}.</p>
       </div>
-
 
       <div class="footer-contact">
       @if(footerContent.twitter != "") {
