@@ -31,3 +31,27 @@
   --p-button-primary-border-color: #FFF5F2;
   --p-button-primary-hover-background: rgb(218, 233, 231);
 }
+
+@media (max-width: 900px) {
+  .menu-top-right {
+    gap: 0.3rem;
+    padding: 0.2rem 0.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-top-right {
+    gap: 0.2rem;
+    padding: 0.1rem 0.2rem;
+  }
+  .menu-top-right-button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-top-right {
+    justify-content: flex-end;
+    width: 100%;
+  }
+}

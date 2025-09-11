@@ -15,3 +15,34 @@
   width: 2.5rem;
   margin-left: 2rem;
 }
+
+@media (max-width: 900px) {
+  .menu-top-left > h1 {
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+  }
+  .menu-top-left > img {
+    width: 2rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-top-left > h1 {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+  .menu-top-left > img {
+    width: 1.5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-top-left > h1 {
+    display: none;
+  }
+  .menu-top-left > img {
+    margin-left: 0;
+  }
+}
