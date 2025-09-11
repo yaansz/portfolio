@@ -1,0 +1,68 @@
+@if (footerContent) {
+<footer>
+  <div class="container__footer">
+
+      <div class="footer-credits">
+      <p class="text-sm">© {{ getCurrentYear() }} Yan Figueiredo.</p>
+      </div>
+
+
+      <div class="footer-contact">
+      @if(footerContent.twitter != "") {
+        <a
+          [href]="footerContent.twitter"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-white transition"
+        >
+          <i class="pi pi-twitter" style="font-size: 2rem"></i>
+        </a>
+      }
+
+      @if (footerContent.github != "") {
+        <a
+          [href]="footerContent.github"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-white transition"
+        >
+          <i class="pi pi-github" style="font-size: 2rem"></i>
+        </a>
+      }
+
+      @if (footerContent.linkedin != "") {
+        <a
+          [href]="footerContent.linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-white transition"
+        >
+          <i class="pi pi-linkedin" style="font-size: 2rem"></i>
+        </a>
+      }
+
+      @if (footerContent.youtube != "") {
+        <a
+          [href]="footerContent.youtube"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-white transition"
+        >
+          <i class="pi pi-youtube" style="font-size: 2rem"></i>
+        </a>
+      }
+
+      @if (footerContent.email != "") {
+        <a
+          href="mailto:{{footerContent.email}}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-white transition"
+        >
+          <i class="pi pi-envelope" style="font-size: 2rem"></i>
+        </a>
+      }
+      </div>
+  </div>
+</footer>
+}

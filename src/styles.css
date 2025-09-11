@@ -1,6 +1,5 @@
 @import "primeicons/primeicons.css";
 @import "tailwindcss";
-@plugin "tailwindcss-primeui";
 
 *{
 	padding: 0;
@@ -15,7 +14,7 @@ html, body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   color: #064232;
-  background: #FFF5F2; /* base dark color */
+  background: #FFF5F2;
   position: relative;
 }
 

@@ -1,0 +1,48 @@
+/* Footer container */
+footer {
+  padding: 1.5rem 0;
+}
+
+/* Inner container */
+.container__footer {
+  max-width: 50vw;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  /* background: #568F87; */
+}
+
+/* Credits text */
+.footer-credits p {
+  font-size: 0.875rem; /* small text */
+  margin: 0;
+}
+
+/* Contact / social icons */
+.footer-contact {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Icon styles */
+.footer-contact a {
+  color: #568F87;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #064232;
+  transform: scale(1.1);
+}
+
+/* Responsive: desktop layout */
+@media (min-width: 768px) {
+  .container__footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
