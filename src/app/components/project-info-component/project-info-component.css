@@ -12,6 +12,19 @@
   -moz-box-shadow: 1px 8px 15px -6px rgba(0,0,0,0.31);
 }
 
+.stack-tag {
+  --p-tag-primary-color: #FFF5F2;
+  --p-tag-primary-background: #064232;
+}
+
+.project-link-button {
+  --p-button-primary-color: #FFF5F2;
+  --p-button-primary-background: #064232;
+  --p-button-primary-border-color: #064232;
+  --p-button-primary-hover-background: #568F87;
+
+}
+
 .project-card-header > h1 {
   font-size: 1.5rem;
   font-weight: 400;

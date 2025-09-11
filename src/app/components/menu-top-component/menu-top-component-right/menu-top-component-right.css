@@ -14,7 +14,7 @@
 /* Icon next to language switch */
 .menu-top-right p-icon-field {
   font-size: 1.2rem;
-  color: #555;
+  color: #F5BABB;
   cursor: default;
 }
 
@@ -26,10 +26,8 @@
 }
 
 .menu-top-right-button {
-  --p-button-background: #404040;
+  --p-button-primary-color: #064232;
+  --p-button-primary-background: #FFF5F2;
+  --p-button-primary-border-color: #FFF5F2;
+  --p-button-primary-hover-background: rgb(218, 233, 231);
 }
-
-.p-button {
-  background: red !important;
-}
-

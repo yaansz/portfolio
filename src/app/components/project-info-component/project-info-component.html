@@ -10,21 +10,21 @@
 
     <div class="card-stack">
       @for (item of project.stack; track $index) {
-      <p-tag [value]="item" severity="info" />
+      <p-tag [value]="item" severity="primary" class="stack-tag" />
       }
     </div>
   </div>
 
   <div class="footer-view">
     @if (project.github != "") {
-    <a [href]="project.github">
-      <p-button label="GitHub" icon="pi pi-github"></p-button>
+    <a [href]="project.github" target="_blank">
+      <p-button label="GitHub" icon="pi pi-github" type="primary" class="project-link-button"></p-button>
     </a>
     }
 
     @if (project.youtube) {
-    <a [href]="project.youtube">
-      <p-button label="YouTube" icon="pi pi-youtube"></p-button>
+    <a [href]="project.youtube" target="_blank">
+      <p-button label="YouTube" icon="pi pi-youtube" class="project-link-button"></p-button>
     </a>
     }
   </div>

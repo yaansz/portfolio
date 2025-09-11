@@ -9,6 +9,15 @@
   --p-toolbar-border-color: #00000000;
 }
 
+.menu-top-center-button {
+  --p-button-primary-color: #FFF5F2;
+  --p-button-primary-background: #00000000;
+  --p-button-primary-border-color: #00000000;
+  --p-button-primary-hover-background: #00000000;
+  --p-button-primary-hover-border-color: #00000000;
+  --p-button-primary-hover-color: #F5BABB;
+}
+
 .p-toolbar {
   border: none !important;
   box-shadow: none !important;
