@@ -11,7 +11,7 @@
     <!-- <p-divider></p-divider> -->
 
     <div class="about-page-about container__about-page-content content-width">
-      <h1>About Me</h1>
+      <h1> {{ 'about.about-me.about-me' | translate }}</h1>
 
       <div class="about-page-about-list">
         @for (content of aboutMeContent; track $index) {
@@ -26,7 +26,7 @@
   <!-- <p-divider></p-divider> -->
 
   <div class="about-page-skills container__about-page-content content-width">
-    <h1>Skills</h1>
+    <h1>{{ 'about.about-me.skills' | translate }}</h1>
 
     <div class="about-page-skills-list">
       @for (content of stackContent; track $index) {
@@ -38,7 +38,7 @@
   </div>
 
   <div id="projects" class="container__about-page-projects-section">
-    <h1>Projects</h1>
+    <h1>{{ 'about.projects' | translate }}</h1>
 
     <div class="about-page-projects-list">
     @for (project of personalProjects; track $index) {

@@ -9,10 +9,11 @@ import { AdvancedCardComponent } from "../../components/advanced-card-component/
 import { AdvancedCardContent } from '../../models/advanced-card-content';
 import { ProjectInfoComponent } from '../../components/project-info-component/project-info-component';
 import { ProjectsContent } from '../../models/projects-models';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about-page',
-  imports: [ContentImageComponent, SimpleCardComponent, DividerModule, AdvancedCardComponent, ProjectInfoComponent],
+  imports: [ContentImageComponent, SimpleCardComponent, DividerModule, AdvancedCardComponent, ProjectInfoComponent, TranslatePipe],
   templateUrl: './about-page.html',
   styleUrl: './about-page.css'
 })
