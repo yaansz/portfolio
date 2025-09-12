@@ -9,7 +9,7 @@ type LangOption = { label: string; value: string; emoji?: string; title?: string
 
 @Component({
   selector: 'app-menu-top-component-right',
-  imports: [FormsModule, SelectButtonModule, ButtonModule, PopoverModule, TranslatePipe, TranslateDirective],
+  imports: [FormsModule, SelectButtonModule, ButtonModule, PopoverModule, TranslatePipe],
   templateUrl: './menu-top-component-right.html',
   styleUrl: './menu-top-component-right.css'
 })

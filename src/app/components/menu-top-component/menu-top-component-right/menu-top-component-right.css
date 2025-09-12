@@ -6,6 +6,22 @@
   background: transparent;
 }
 
+::ng-deep .menu-top-right-popover {
+  background-color: #064232 !important;
+  border-color: transparent;
+  color: #FFF5F2 !important;
+}
+
+::ng-deep .menu-top-right-popover-language-button {
+  background-color: #568F87 !important;
+  color: #FFF5F2 !important;
+}
+
+::ng-deep .menu-top-right-popover-language-button .p-highlight {
+  background-color: #064232;
+}
+
+
 .menu-top-right-language-switch {
   display: flex;
   align-items: center;

@@ -6,7 +6,7 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MenuTopComponent, FooterComponent, TranslatePipe, TranslateDirective],
+  imports: [RouterOutlet, MenuTopComponent, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

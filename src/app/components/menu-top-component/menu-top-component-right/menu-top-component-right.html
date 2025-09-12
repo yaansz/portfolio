@@ -1,20 +1,17 @@
 <div class="menu-top-right">
   <p-button class="menu-top-right-button" icon="pi pi-ellipsis-v" (click)="op.toggle($event)"></p-button>
-  <p-popover #op>
-    <div class="menu-top-right-popover">
-      <!-- Language Switch -->
-      <div class="menu-top-right-popover-language">
-        <h4>Select your Language</h4>
-        <p-selectbutton
-          [options]="langOptions"
-          [(ngModel)]="selectedLang"
-          (ngModelChange)="setLanguage($event)"
-          optionLabel="label"
-          optionValue="value"
-        ></p-selectbutton>
-      </div>
-
-      <hr class="menu-top-right-divider" />
+  <p-popover #op styleClass="menu-top-right-popover">
+    <!-- Language Switch -->
+    <div class="menu-top-right-popover-language">
+      <h4>{{ 'about.top-menu.select-lang' | translate }}</h4>
+      <p-selectbutton
+        [options]="langOptions"
+        [(ngModel)]="selectedLang"
+        (ngModelChange)="setLanguage($event)"
+        optionLabel="label"
+        optionValue="value"
+        styleClass="menu-top-right-popover-language-button"
+      ></p-selectbutton>
     </div>
   </p-popover>
 </div>
