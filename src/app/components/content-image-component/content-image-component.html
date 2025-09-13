@@ -6,7 +6,7 @@
     <p>{{ content.description }}</p>
   </div>
   <div class="hero-image">
-    <img [src]="content.imageUrl" [alt]="content.title">
+    <img [src]="content.imageUrl" [alt]="content.title" fetchpriority="high">
   </div>
 </section>
 }
