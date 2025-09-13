@@ -1,20 +1,18 @@
 import { Injectable } from '@angular/core';
 import { StaticContent } from '../models/static-content';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StaticContentService {
 
-  getStaticContent() : StaticContent {
-    return {
-      name: "Yan Figueiredo",
-      twitter: "https://x.com/yaaaansz",
-      github: "https://github.com/yaansz",
-      linkedin: "https://www.linkedin.com/in/yansz/",
-      youtube: "https://www.youtube.com/@Yeioucraft",
-      email: "yancfm@gmail.com"
-    }
+  constructor(private http : HttpClient) {}
+
+  getStaticContent() : Observable<StaticContent> {
+    const path = `about/static.json`;
+    return this.http.get<StaticContent>(path);
   }
 
 }

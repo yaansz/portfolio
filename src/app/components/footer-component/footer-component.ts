@@ -14,7 +14,9 @@ export class FooterComponent implements OnInit {
 
   constructor(private service : StaticContentService) {}
   ngOnInit(): void {
-    this.footerContent = this.service.getStaticContent();
+    this.service.getStaticContent().subscribe(content => {
+      this.footerContent = content;
+    });
   }
 
   getCurrentYear() : number {

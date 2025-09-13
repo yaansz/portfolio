@@ -9,7 +9,7 @@ import { AdvancedCardComponent } from "../../components/advanced-card-component/
 import { AdvancedCardContent } from '../../models/advanced-card-content';
 import { ProjectInfoComponent } from '../../components/project-info-component/project-info-component';
 import { ProjectsContent } from '../../models/projects-models';
-import { TranslatePipe } from '@ngx-translate/core';
+import { LangChangeEvent, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about-page',
@@ -19,12 +19,13 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class AboutPage implements OnInit {
 
+  currentLang : string = '';
   contentList : ContentWithImage[] = [];
   stackContent : SimpleCardContent[] = [];
   aboutMeContent : AdvancedCardContent[] = [];
   personalProjects : ProjectsContent[] = [];
 
-  constructor(private service : AboutService) {
+  constructor(private service : AboutService, private translate : TranslateService) {
     this.contentList = [];
     this.stackContent = [];
     this.aboutMeContent = [];
@@ -32,9 +33,27 @@ export class AboutPage implements OnInit {
   }
 
   ngOnInit(): void {
-    this.contentList = this.service.getContent();
-    this.stackContent = this.service.getTechStack();
-    this.aboutMeContent = this.service.getAboutMe();
-    this.personalProjects = this.service.getProjects();
+    this.currentLang = this.translate.getCurrentLang();
+
+    this.translate.onLangChange.subscribe(
+      (event : LangChangeEvent) => {
+        console.log('Language changed to: ', event.lang);
+        this.currentLang = event.lang;
+        this.fetchContent();
+      }
+    );
+
+    this.fetchContent();
+  }
+
+  private fetchContent() : void {
+    console.log('Fetching Page content in', this.currentLang);
+
+    this.service.loadContent(this.currentLang).subscribe(file => {
+      this.contentList = file.about;
+      this.stackContent = file.stack;
+      this.aboutMeContent = file.aboutMe;
+      this.personalProjects = file.projects;
+    });
   }
 }

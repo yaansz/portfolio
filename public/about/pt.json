@@ -1,0 +1,76 @@
+{
+  "about": [
+    {
+      "title": "Yan Figueiredo",
+      "description": "Bem-vindo! Sou desenvolvedor de software e graduado pela Universidade Federal Rural do Rio de Janeiro. Tenho experiência em aplicações back-end e full-stack, com foco em soluções confiáveis e escaláveis.",
+      "imageUrl": "images/photo.png"
+    }
+  ],
+  "aboutMe": [
+    {
+      "title": "Formação",
+      "subtitle": "Graduado na Universidade Federal Rural do Rio de Janeiro em 2023",
+      "description": "Bacharel em Ciência da Computação (B.Sc.) pela UFRRJ, com ênfases em Engenharia de Sistemas e Informação e Sistemas Inteligentes, formado com láurea acadêmica.",
+      "icon": "pi pi-graduation-cap"
+    },
+    {
+      "title": "Experiência",
+      "subtitle": "Experiência profissional como desenvolvedor desde 2021",
+      "description": "Construção e manutenção de sistemas de alto desempenho, com experiência em TCP, WebSockets, REST, multithreading e métricas de software.\nAtuação em ensino e pesquisa em estruturas de dados e pacotes de análise/geração de dados.",
+      "icon": "pi pi-star-fill"
+    }
+  ],
+  "stack": [
+    { "title": "Delphi", "description": "Principalmente desenvolvimento de serviços Windows para sistemas corporativos, usando ICS e Horse para web services." },
+    { "title": "Java", "description": "Construção de aplicações corporativas e projetos pessoais com Spring Framework." },
+    { "title": "TypeScript", "description": "Desenvolvimento de aplicações frontend com Angular, com foco em interfaces escaláveis e dinâmicas." },
+    { "title": "Go", "description": "Criação de APIs de alto desempenho e projetos pessoais com Fiber." },
+    { "title": "SQL / PostgreSQL", "description": "Modelagem de esquemas relacionais, otimização de queries e administração de bancos de dados para persistência confiável." },
+    { "title": "Git / GitHub / GitLab", "description": "Uso diário de controle de versão, gestão de código, colaboração em projetos e implementação de pipelines CI/CD para testes e deploy automatizados." },
+    { "title": "Docker", "description": "Containerização de aplicações para ambientes consistentes e deploy simplificado." }
+  ],
+  "projects": [
+    {
+      "title": "Curupira",
+      "description": "Framework Java para Discord. Biblioteca declarativa para facilitar integrações, inspirado no Spring Boot. Publicado via JitPack.",
+      "stack": ["Java", "JDA", "Reflections", "JitPack"],
+      "github": "https://github.com/Softawii/curupira",
+      "youtube": ""
+    },
+    {
+      "title": "Capivara",
+      "description": "Bot para Discord. Implementação de canais de voz sob demanda, gerenciamento automático de cargos, correção de embeds, métricas, pipelines CI/CD e backups semanais do banco de dados.",
+      "stack": ["Java", "JDA", "Curupira", "Spring Boot", "Docker", "GitHub Actions", "Micrometer", "Prometheus", "Grafana", "PostgreSQL"],
+      "github": "https://github.com/softawii/capivara",
+      "youtube": ""
+    },
+    {
+      "title": "Caramelo",
+      "description": "Integração de pagamentos e sistema de ingressos para eventos e serviços em ambientes controlados.",
+      "stack": ["Java", "Spring", "PostgreSQL", "Supabase", "Prometheus", "Grafana", "Angular"],
+      "github": "",
+      "youtube": ""
+    },
+    {
+      "title": "Cuca",
+      "description": "Bot de autenticação baseado em domínio de e-mail. Autentica usuários por domínio (ex.: @ufrrj.br), gera tokens e integra com SMTP.",
+      "stack": ["Java", "Micronaut", "JDA", "PostgreSQL"],
+      "github": "https://github.com/softawii/cuca",
+      "youtube": ""
+    },
+    {
+      "title": "ADDAOU-PAPI",
+      "description": "Análise de desempenho de algoritmos de ordenação com PAPI. Medição de MergeSort e QuickSort usando o profiler PAPI.",
+      "stack": ["C", "C++", "Python", "PAPI"],
+      "github": "https://github.com/Softawii/ADDAOU-PAPI",
+      "youtube": ""
+    },
+    {
+      "title": "Dave, The Explorer",
+      "description": "Jogo desenvolvido para projeto universitário. Implementação de mecânicas como puzzles, drones, placas de pressão e objetos móveis.",
+      "stack": ["C#", "Unity"],
+      "github": "https://github.com/Softawii/Project-DDC",
+      "youtube": "fpAx1ffZ3AA"
+    }
+  ]
+}
