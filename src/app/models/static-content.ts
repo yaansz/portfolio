@@ -1,4 +1,4 @@
-export interface FooterContent {
+export interface StaticContent {
   name : string;
   twitter : string;
   github : string;

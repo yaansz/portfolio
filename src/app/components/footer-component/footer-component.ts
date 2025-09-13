@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FooterContent } from '../../models/footer-content';
-import { FooterService } from '../../services/footer-service';
+import { StaticContent } from '../../models/static-content';
+import { StaticContentService } from '../../services/static-content-service';
 
 @Component({
   selector: 'app-footer-component',
@@ -10,11 +10,11 @@ import { FooterService } from '../../services/footer-service';
 })
 export class FooterComponent implements OnInit {
 
-  @Input() footerContent : FooterContent | null  = null;
+  @Input() footerContent : StaticContent | null  = null;
 
-  constructor(private service : FooterService) {}
+  constructor(private service : StaticContentService) {}
   ngOnInit(): void {
-    this.footerContent = this.service.getFooterContent();
+    this.footerContent = this.service.getStaticContent();
   }
 
   getCurrentYear() : number {

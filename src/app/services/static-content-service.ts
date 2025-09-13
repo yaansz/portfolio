@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { FooterContent } from '../models/footer-content';
+import { StaticContent } from '../models/static-content';
 
 @Injectable({
   providedIn: 'root'
 })
-export class FooterService {
+export class StaticContentService {
 
-  getFooterContent() : FooterContent {
+  getStaticContent() : StaticContent {
     return {
       name: "Yan Figueiredo",
       twitter: "https://x.com/yaaaansz",

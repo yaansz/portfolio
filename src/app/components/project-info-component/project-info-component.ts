@@ -6,11 +6,12 @@ import { RouterModule } from '@angular/router';
 import { TagModule } from 'primeng/tag';
 import { DialogModule } from 'primeng/dialog';
 import { YoutubePlayerComponent } from "../youtube-player-component/youtube-player-component";
+import { TranslatePipe } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-project-info-component',
-  imports: [CardModule, ButtonModule, RouterModule, TagModule, DialogModule, YoutubePlayerComponent],
+  imports: [CardModule, ButtonModule, RouterModule, TagModule, DialogModule, YoutubePlayerComponent, TranslatePipe],
   templateUrl: './project-info-component.html',
   styleUrl: './project-info-component.css'
 })

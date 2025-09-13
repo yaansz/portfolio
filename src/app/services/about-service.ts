@@ -3,7 +3,7 @@ import { ContentWithImage } from '../models/content-image-models';
 import { SimpleCardContent } from '../models/simple-card-models';
 import { AdvancedCardContent } from '../models/advanced-card-content';
 import { ProjectsContent } from '../models/projects-models';
-import { FooterContent } from '../models/footer-content';
+import { StaticContent } from '../models/static-content';
 
 @Injectable({
   providedIn: 'root',

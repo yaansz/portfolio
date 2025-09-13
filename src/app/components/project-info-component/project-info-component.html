@@ -24,7 +24,7 @@
 
     @if (project.youtube) {
     <p-button label="YouTube" icon="pi pi-youtube" class="project-link-button" (onClick)="openDialog()"></p-button>
-    <p-dialog header="Check the Video!" [(visible)]="youtubeDialog" class="youtube-dialog-view">
+    <p-dialog [header]="'about.projects.check-the-video' | translate" [(visible)]="youtubeDialog" class="youtube-dialog-view">
       <div class="youtube-dialog-content">
         <app-youtube-player-component [videoId]="project.youtube"></app-youtube-player-component>
       </div>
