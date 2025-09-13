@@ -10,6 +10,7 @@ import { AdvancedCardContent } from '../../models/advanced-card-content';
 import { ProjectInfoComponent } from '../../components/project-info-component/project-info-component';
 import { ProjectsContent } from '../../models/projects-models';
 import { LangChangeEvent, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about-page',
@@ -25,7 +26,16 @@ export class AboutPage implements OnInit {
   aboutMeContent : AdvancedCardContent[] = [];
   personalProjects : ProjectsContent[] = [];
 
-  constructor(private service : AboutService, private translate : TranslateService) {
+  constructor(
+    private service : AboutService,
+    private translate : TranslateService,
+    private meta : Meta,
+    private title : Title
+  ) {
+
+    this.title.setTitle('Yan Figueiredo | Portfolio');
+    this.meta.updateTag({ name: 'description', content: 'Portfolio of Yan Figueiredo, software developer.' });
+
     this.contentList = [];
     this.stackContent = [];
     this.aboutMeContent = [];
