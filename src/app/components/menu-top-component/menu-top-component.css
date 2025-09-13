@@ -1,11 +1,21 @@
 .container__menu-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; /* vertical alignment */
-  background: #064232;
   box-shadow: 1px 7px 13px -2px rgba(0,0,0,0.15);
   -webkit-box-shadow: 1px 7px 13px -2px rgba(0,0,0,0.15);
   -moz-box-shadow: 1px 7px 13px -2px rgba(0,0,0,0.15);
   width: 100%;      /* span full width */
+  background: #064232;
+}
+
+.menu-top-general-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* vertical alignment */
+  width: 100%;      /* span full width */
+}
+
+@media (max-width: 900px) {
+  .menu-top-general-content {
+    padding: 5vw;
+  }
 }

@@ -10,12 +10,14 @@ import { StaticContent } from '../models/static-content';
 })
 export class AboutService {
   getContent(): ContentWithImage[] {
+    console.log('called')
+
     return [
       {
         title: "Yan Figueiredo",
         description:
           "Welcome! I'm a software developer and graduate of the Federal Rural University of Rio de Janeiro. I specialize in building back-end and full-stack applications, with a focus on creating reliable and scalable solutions.",
-        imageUrl: 'images/photo-yan.png',
+        imageUrl: 'images/photo.png',
       },
       // {
       //   title: 'About My Preferences',
