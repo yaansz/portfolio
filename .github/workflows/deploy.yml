@@ -1,0 +1,23 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: 'Deploying to GitHub Pages'
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4.0
+      with:
+        github_access_token: ${{ secrets.GH_TOKEN }}
+        build_configuration: production
+        base_href: https://yansz.dev
+        deploy_branch: gh-pages
+        angular_dist_build_folder: dist/portfolio/browser
+
+permissions:
+  contents: write
