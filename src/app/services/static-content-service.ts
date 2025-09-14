@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { DOCUMENT, Inject, Injectable } from '@angular/core';
 import { StaticContent } from '../models/static-content';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -11,7 +11,7 @@ export class StaticContentService {
   constructor(private http : HttpClient) {}
 
   getStaticContent() : Observable<StaticContent> {
-    const path = `about/static.json`;
+    const path = "about/static.json";
     return this.http.get<StaticContent>(path);
   }
 
